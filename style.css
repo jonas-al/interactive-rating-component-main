@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Bluecicle: #313844;
+
+    --font: 'Overpass', sans-serif;;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 95vh;
+    background-color: var(--VeryDarkBlue);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--DarkBlue);
+    background: linear-gradient(180deg, var(--DarkBlue), hsl(210, 19%, 11%));
+    width: 400px;
+    height: 400px;
+    padding: 30px 30px 0 30px;
+    border-radius: 25px;
+}
+
+.container .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Bluecicle);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+.container .icon img{
+    display: flex;
+    width: 20px;
+}
+
+.container .text h1{
+    font-weight: 400;
+    color: var(--White);
+    margin-bottom: 10px;
+}
+
+.container .text p{
+    font-size: 15px;
+    color: var(--LightGrey);
+    margin-bottom: 30px;
+}
+
+.container .grade{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.container .grade > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border-style: none;
+    background-color: var(--Bluecicle);
+    font-weight: 700;
+    color: var(--LightGrey);
+}
+
+.container .grade > button:focus{
+    color: var(--White);
+    background-color: var(--LightGrey);
+}
+
+.container .grade > button:hover{
+    cursor: pointer;
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.container #formSubmit{
+    border: none;
+    border-radius: 40px;
+    height: 50px;
+    font-weight: 700;
+    color: var(--White);
+    background-color: var(--Orange);
+}
+
+.container #formSubmit:hover:enabled{
+    cursor: pointer;
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.container-submit{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--DarkBlue);
+    background: linear-gradient(180deg, var(--DarkBlue), hsl(210, 19%, 11%));
+    width: 400px;
+    height: 400px;
+    padding-top: 50px;
+    border-radius: 25px;
+}
+
+.container-submit img{
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.container-submit div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    background-color: var(--DarkBlue);
+    border-radius: 40px;
+    height: 35px;
+    margin-bottom: 30px;
+}
+
+.container-submit div h2{
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--Orange);
+}
+
+.container-submit h1{
+    color: var(--White);
+    margin-bottom: 10px;
+}
+
+.container-submit p{
+    color: var(--LightGrey);
+    font-size: 15px;
+    text-align: center;
+    margin: 0 25px
+}
+
+.hidden{
+    display: none;
+}
+
+footer{
+    display: flex;
+    font-family: var(--font);
+    width: 100vw;
+    height: 5vh;
+    font-size: 14px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer a{
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 0.5px 0px #eb1491;
+    text-decoration: none;
+}
+
+footer span{
+    font-size: 2.5em;
+    padding: 0 0 10px 15px;
+}
